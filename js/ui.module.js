@@ -35,12 +35,7 @@ export class Ui {
   }
 
   displayDetails(data) {
-    const cartonaeldetails = ` <div class="container my-4">
-    <div class="header d-flex justify-content-between align-items-center">
-        <h1  class="text-capitalize">details game</h1>
-        <button class="btn-close btn-close-white" id="btnclose"></button>
-    </div>
-    <div class="row g-3  my-2">
+    const cartonaeldetails = `
         <div class="col-md-4">
             <div class="img-detail">
                 <img src="${data.thumbnail}" class="w-100 rounded-1" alt="thumbnail">
@@ -58,9 +53,8 @@ export class Ui {
 
         </div>
         </div>
-    </div>
-    </div>`;
-      document.getElementById("details").innerHTML = cartonaeldetails;
+   `;
+      document.getElementById("detal").innerHTML = cartonaeldetails;
     
      
     }

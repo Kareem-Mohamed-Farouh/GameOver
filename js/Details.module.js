@@ -5,16 +5,18 @@ export class Details {
 
     // let clos = document.getElementById("btnclose");
          document.getElementById("btnclose").addEventListener("click", () => {
+           this.loading.classList.remove("d-none");
            document.getElementById("details").classList.add("d-none");
            document.getElementById("games").classList.remove("d-none");
-       
-         });
+           this.loading.classList.add("d-none");
+          });
           
           this.loading = document.querySelector(".loading");
-     
-}
-
-  async getDetails(id) {
+          
+        }
+        
+        async getDetails(id) {
+    this.loading.classList.remove("d-none");
     const optionss = {
       method: "GET",
       headers: {
