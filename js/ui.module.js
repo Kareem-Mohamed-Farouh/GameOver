@@ -34,8 +34,15 @@ export class Ui {
     gemedata.innerHTML = cartona;
   }
 
-  displayDetails(data) {
-    const cartonaeldetails = `
+    displayDetails(data) {
+        //المشكلة كانت في السطرين دول ياهندسة
+      //  <div class="container my-4">
+      //     <div class="header d-flex justify-content-between align-items-center">
+      //         <h1  class="text-capitalize">details game</h1>
+      //         <button class="btn-close btn-close-white" id="btnclose"></button>
+      //     </div>
+      //     <div class="row g-3  my-2">
+      const cartonaeldetails = `
         <div class="col-md-4">
             <div class="img-detail">
                 <img src="${data.thumbnail}" class="w-100 rounded-1" alt="thumbnail">
@@ -45,18 +52,19 @@ export class Ui {
             <div>
              <h3 class="h2">Title: ${data.title}</h3>
              <p>Category: <span class="smalll bg-success p-1 rounded-2">${data.genre}</span></p>
-             <p>Platform: <span class="smalll bg-info p-1 rounded-2" >${data.platform}</span></p>
-             <p>Status:  <span class="smalll bg-danger p-1 rounded-2">${data.status}</span></p>
+             <p>Platform: <span class="smalll bg-danger p-1 rounded-2" >${data.platform}</span></p>
+             <p>Status:  <span class="smalll bg-info p-1 rounded-2">${data.status}</span></p>
 
              <p class="game-details">${data.description}</p>
             <a class="btn btn-outline-warning" target="_blank" href= "${data.game_url}">Show Game</a>
 
         </div>
         </div>
-   `;
+    `;
+        //ودول
+        // </div>
+    // </div>
       document.getElementById("detal").innerHTML = cartonaeldetails;
-    
-     
     }
 }
 
