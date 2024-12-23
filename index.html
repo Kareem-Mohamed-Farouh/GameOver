@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameOver</title>
+
+<!--nareko  -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Nerko One:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+    rel="stylesheet">
+<!-- comfortaa -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap"
+    rel="stylesheet">
+
+
+    <!--============= font awsome======= -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--======== media quary file=========== -->
+    <link rel="stylesheet" href="css/query-style.css">
+    <!-- =======link boot strabe css file ======== -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--=============index/main css file =========== -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--========== add icon in title=========== -->
+    <link rel="icon" href="image/.png">
+</head>
+
+<body data-bs-target="#navbar-example">
+
+<!-- <div class=" col-md-3 px-3 bg-transparent text-white position-relative"> 
+            <div class="card col-12  bg-transparent text-white position-relative">
+        <div class="p-1 d-flex flex-column align-content-between ">
+            <div class="card-body d-flex flex-column">
+            <img src="image/thumbnail (1).jpg" class=" card-img-top w-100" alt="...">
+            <div class="d-flex justify-content-between py-2">
+            <h5 class="game-title fw-normal ">Card title</h5>
+            <h5 class="btn btn-primary px-1 py-1">Free</h5>
+            </div>
+            <p class="game-info text-center pb-5">This is supporal lead-in to additional
+                content. This content is a little bit longer.</p>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <small class=" bg-secondary px-1  h rounded-3 d-inline-block ">pc (windows)</small>
+            <small class=" bg-secondary px-1 h rounded-3 d-inline-block ">pc (windows)</small>
+        </div>
+        </div>
+
+    </div>
+            </div>  -->
+
+
+            <section id="games" class="games position-relative">
+<header class="hed p-5"  >
+    <h1 class="GO p-5">Ga<span class="text-warning">m</span>e <span class="text-danger" >O</span>ver</h1>
+</header>
+<div class="container px-5  my-2 position-sticky top-0 z-3">
+    <nav id="navbar-example" class="navbar navbar-expand-lg nav-bg  rounded-5 mx-5 py-0 ">
+        <div class="container">
+            <a class="navbar-brand  d-flex align-items-center" href="#">
+                <img src="image/logo-sm.png" class="logo" alt="logo">
+                <div class="ms-2 logo-type ">
+                    <div class="logo-title h5 text-white fw-bold">Game Reviews</div>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse small navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+                    <li class="nav-item">
+                        <a class="nav-link active  text-uppercase" aria-current="page" data-category="mmorpg">mmorpg</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" data-category="shooter">shooter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" data-category="sailing">sailing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" data-category="permadeath">permadeath</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" data-category="superhero">superhero</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase" data-category="pixel">pixel</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+<main class="container my-5 home">
+    <section class="position-relative">
+        <div class="row g-4" id="gameData">
+
+
+
+
+</div>
+
+
+
+    </section>
+</main>
+</section>
+
+<section class="details d-none" id="details">
+<div class="container my-4">
+<div class="header d-flex justify-content-between align-items-center">
+    <h1  class="text-capitalize">details game</h1>
+    <a type="button"  class="btn-close btn-close-white" id="btnclose"></a>
+</div>
+<div class="row g-3  my-2">
+    <div class="col-md-4">
+        <div class="img-detail">
+            <img src="image/thumbnail.jpg" class="w-100 rounded-1" alt="thumbnail">
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div>
+         <h3 class="h2">Title: ${Throne And Liberty}</h3>
+         <p>Category: <span class="smalll bg-success p-1 rounded-2">${MMORPG}</span></p>
+         <p>Platform: <span class="smalll bg-info p-1 rounded-2" >${windos}</span></p>
+         <p>Status:  <span class="smalll bg-danger p-1 rounded-2">${live}</span></p>
+
+         <p class="game-details">${Throne and Liberty is a free-to-play multi-platform MMORPG from NCSoft and Amazon Games. The open-world game features
+        large-scale PvPvE in which players can explore everything from sprawling plains to mountain peaks. To survive, players
+        will need to be able to adapt and make decisions based on weather, time of day, and – of course – what other players are
+        doing. The ultimate goal is to claim the throne by defeating Kazar. To do this, players will need to make use of the
+        ability to transform and take the battle to not just the land, but also the sea and air. The game features cross-play
+        bringing together players on PC, Xbox Series XS, and PlayStation 5. Players on the PS5 can choose to disable
+        cross-play. It’s also worth noting that cross-progression is not supported.}</p>
+        <a class="btn btn-outline-warning" target="_blank" href="https://www.freetogame.com/open/throne-and-liberty">Show Game</a>
+
+    </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+<div class="loading d-flex justify-content-center align-items-center position-absolute bg-opacity-75 top-0 start-0 bottom-0 end-0  vh-100 z-3 bg-dark d-none">
+
+    <span class="loader"></span>
+</div>
+
+<!-- ===============boot strab js file=========== -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+<!-- ========main js file =============-->
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
