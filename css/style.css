@@ -46,7 +46,7 @@ h4,
 h5,
 h6 ,.h,.smalll{
     font-family: "Nerko One", 'cursive '!important;
-    color: var(--color-text) !important;
+    color: var(--color-text) ;
     
 
 }
@@ -233,4 +233,31 @@ top: 5px;
        
     top: 0px;
     }
+}
+
+
+
+.icons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+   
+    background-color: #ffffff;
+    /*  border: solid 2px #11121b;  /ملهاش لازمه بس عادي/     */
+    border-radius: 50%;
+}
+
+.icons a:hover {
+    color: white;
+    background-color: #009ad8;
+    transition: all 0.6s;
+}
+
+.part-2 {
+    /* background-color: rgb(58, 73, 123); */
+    /* border: solid 2px rgb(58, 73, 123); */
+    border-top:#009ad8 1px solid !important;
 }
