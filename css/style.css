@@ -177,13 +177,13 @@ small,
 .ani1 {
     position: relative;
     top: 10px;
-    animation: ani1 1.5s normal infinite;
+    animation: ani1 1s normal infinite;
 
 }
 .ani{
     position: relative;
     bottom:10px;
-animation: ani 1.5s normal infinite;
+animation: ani 1s normal infinite;
 
 }
 
