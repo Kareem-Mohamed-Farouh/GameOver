@@ -55,8 +55,8 @@ export class Ui {
              <p>Platform: <span class="smalll bg-danger p-1 rounded-2" >${data.platform}</span></p>
              <p>Status:  <span class="smalll bg-info p-1 rounded-2">${data.status}</span></p>
 
-             <p class="game-details">${data.description}</p>
-            <a class="btn btn-outline-warning" target="_blank" href= "${data.game_url}">Show Game</a>
+             <p class="game-details ">${data.description}</p>
+            <a class="btn btn-outline-warning h" target="_blank" href= "${data.game_url}">Show Game</a>
 
         </div>
         </div>
